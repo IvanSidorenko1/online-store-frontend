@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+:point_right: [Stack технологій використанних в проекті](#stack)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+:point_right: [Що робив](#to-do)
 
-## Available Scripts
+:point_right: [як запустити проект](#start)
 
-In the project directory, you can run:
+## <a id="stack">Stack технологій використанних в проекті:</a>
 
-### `npm start`
+1. ### "ReactJS"
+2. ### "react-hook-form"
+3. ### "react-router-dom"
+4. ### "react-bootstrap"
+5. ### "mobx/mobx-react-lite"
+6. ### "axios"
+7. ### "SASS"
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+"": "^6.10.2",
+    "":
+## <a id="to-do">Що робив:</a>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+В рамках навчання, використовуючи ReactJS та бібліотеки до нього створив SPA онлайн магазин.
+В рамках проекту:
+ 1. стосоно юзера:
+    - реалізовано запити для реєстраціі, авторизаціі та аутентифікаціі (./http/userAPI.js)
+    - відповідно до прав (адмін чи юзер) реалізовано доступ до розширених чи обмежених опцій. Адмін має права створювати тип, бренд чи девайс.
+ 2. стосовно типу, бренду, дивайсу:
+    - реалізовано запити створення (типу, бренду, дивайсу), та отримування всіх (типу, бренду, дивайсу) або одного (дивайсу). (./http/deviceAPI.js)
+ 3. роути розділено на авторизовані та публічні.
+ 4. navbar також відображає контент відповідно авторизаціі
+ 5. реалізовано фільтрація по бренду чи типу
 
-### `npm test`
+Використовував :
+- "react-bootstrap" як бібліотеку готових компонентів
+- "axios" для запитів на сервер
+- "mobx/mobx-react-lite" як стейт мененджер
+- "react-hook-form" для работи з формами
+- "react-router-dom" для роутінга по сторінкам та відображення потрібних роутав
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---------------------------------------------------------------------------------
+*** <a id="start">Як запустити проект?</a> ***
 
-### `npm run build`
+1. Скачати копію з репозіторія
+2. В терміналі прописати `npm init`
+3. В терміналі прописати `npm start`
+4. Підключити та запустити серверний застосунок "online-store-backend"
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
